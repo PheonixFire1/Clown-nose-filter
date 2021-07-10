@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+    animation-name: colorChange;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes colorChange
+{
+  from{box-shadow: 1px 1px 30px red;}
+  to{box-shadow: 1px 1px 30px gold;}
+}
+
+  </style>
+</head>
+
+<body style="background-color: darkgrey;">
+<div class="container">
+  <h3 class="btn btn-primary">Introduction to p5.js</h3>
+  <hr>
+  <input type="text" id="FilterInput" placeholder="Enter your Fiter color">
+  <br><br>
+  <button onclick="ApplyFilter()" class="btn btn-warning">Apply Filter</button>
+  <br><br><br>
+  <button onclick="TakeSnapshot()" class="btn btn-success">Take Snapshot</button>
+  <br><br><br><br>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
